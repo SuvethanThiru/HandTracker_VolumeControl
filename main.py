@@ -55,10 +55,10 @@ while True:
         c1, c2 = (x1 + x2)//2, (y1 + y2)//2
 
 
-        cv2.circle(img, (x1, y1), 15, (255, 0, 255), cv2.FILLED)
-        cv2.circle(img, (x2, y2), 15, (255, 0, 255), cv2.FILLED)
-        cv2.line(img, (x1, y1), (x2, y2), (255, 0, 255), 3)
-        cv2.circle(img, (c1, c2), 15, (255, 0, 255), cv2.FILLED)
+        cv2.circle(img, (x1, y1), 15, (255, 0, 0), cv2.FILLED)
+        cv2.circle(img, (x2, y2), 15, (255, 0, 0), cv2.FILLED)
+        cv2.line(img, (x1, y1), (x2, y2), (255, 0, 0), 3)
+        cv2.circle(img, (c1, c2), 15, (255, 0, 0), cv2.FILLED)
 
         length = math.hypot(x2 - x1, y2 - y1)
         #print(length)
@@ -90,7 +90,7 @@ while True:
 ############################## for mac ##############################
 
         if length < 50:
-            cv2.circle(img, (c1, c2), 15, (0, 255, 0), cv2.FILLED)
+            cv2.circle(img, (c1, c2), 15, (255, 100, 0), cv2.FILLED)
 
     cTime = time.time()
     fps = 1/(cTime - pTime)
